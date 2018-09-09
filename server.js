@@ -6,7 +6,7 @@ var orm = require("./config/orm.js");
 var exphbs = require("express-handlebars"); 
 
 var app = express(); 
-var PORT = process.env.PORT || 8080; 
+// var PORT = process.env.PORT || 8080; 
 
 
 //setting handlebars as the default view engine
@@ -17,6 +17,6 @@ app.set("view engine", "handlebars");
 
 app.use("/", routes); 
 
-app.listen(PORT, function(){
-    console.log("app is listening on Port: " + PORT);
-})
+// app.listen(PORT, function(){
+//     console.log("app is listening on Port: " + PORT);
+// })
